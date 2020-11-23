@@ -1,7 +1,15 @@
 import React from 'react'
 
-const Header = () => (
-  <h1 className="f1">RoboFriends</h1>
-)
+class Header extends React.Component {
+  shouldComponentUpdate(nextProps, nextState) {
+    return false
+  }
+
+  render() {
+    return (
+      <h1 className="f1">RoboFriends</h1>
+    )
+  }
+}
 
 export default Header
